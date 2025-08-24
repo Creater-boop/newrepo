@@ -1,17 +1,25 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* menu section */
+
 .menu{
-    height: 70px;
+    height: 60px;
     width: 1730px;
     background-color:#1d2a35;
-     display: flex;           
+    display: flex;           
     align-items: center;     
     padding: 0 20px;  
 }
+
+
+/* logo section */
 
 .logo{
     height: 30px;
@@ -26,17 +34,164 @@
     color: #04aa6d;
 }
 
-.nav ul li{
-    display: inline-block;
+
+/* navbar section */
+
+.nav ul li {
+    height: 60px;
+    width: 120px;
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
 }
 
-.nav ul{
-    margin: 0px 0px 0px 20px;
+.nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;               
+    list-style: none;         
+    padding: 0;
 }
 
 .nav a {
     text-decoration: none;
-    color: #f1f1f1;
-    margin-left: 70px;
-    font-size: 18px;   /* better size for navbar */
+    color: white;
+    font-size: 18px;
+}
+
+
+.nav li:hover{
+    background-color: #04aa6d;
+}
+
+/* Search bar section */
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.search-container input {
+  padding: 10px 40px 10px 15px; 
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-style: italic;  
+}
+
+.search-container input::placeholder {
+  font-style: italic;
+  color: #666;
+}
+
+.search-container button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search-container button img {
+  width: 16px;   
+  height: 16px;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+/* theme section */
+
+.change{
+  height: 30px;
+  width:  30px;
+  margin: 0px 0px 0px 10px;
+}
+
+.change img{
+  height: 25px;
+  width:  25px;
+}
+
+
+/* about section */
+
+.about{
+  margin-left: 20px;
+}
+
+.about ul li {
+    height: 40.1px;
+    width: 160px;
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+}
+
+.about ul {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;               
+    list-style: none;         
+    padding: 0;
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+
+
+.about li:hover{
+    background-color:#38444d;
+    border-radius: 20px;
+}
+
+
+/* signin bar section */
+
+.sign{
+  height: 30px;
+  width:  100px;
+  margin-left: 12px;
+  margin-top: -25px;
+}
+
+.sign button{
+  height: 55px;
+  width:  120px;
+  border-radius: 10px;
+  border: none;
+  font-size: 19px;
+  background: #04aa6d;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/*language section*/
+
+.lang{
+  background-color: #141d24;
+  height: 30px;
+}
+
+.lang ul{
+  display: flex;
+  list-style: none;
+}
+
+.lang ul li{
+  margin: 0px 0px 0px 10px;
+}
+
+.lang a{
+  text-decoration: none;
+  color: white;
 }

@@ -1,67 +1,81 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Default Light Mode */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;   /* white body */
+  color: black;              /* black text */
+  transition: 0.3s;
 }
 
 /* menu section */
 
-.menu{
-    height: 60px;
-    width: 1730px;
-    background-color:#1d2a35;
-    display: flex;           
-    align-items: center;     
-    padding: 0 20px;  
+.menu {
+  height: 60px;
+  width: 1730px;
+  background-color: #1d2a35;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+      
 }
 
 
 /* logo section */
 
-.logo{
-    height: 30px;
-    width: 110px;
-    text-align: center;
-    padding: 0px 0px 0px 10px;
+.logo {
+  height: 30px;
+  width: 110px;
+  text-align: center;
+  padding: 0px 0px 0px 10px;
 }
 
 
-.logo h3 a{
-    text-decoration: none;
-    color: #04aa6d;
+.logo h3 a {
+  text-decoration: none;
+  color: #04aa6d;
 }
 
 
 /* navbar section */
 
 .nav ul li {
-    height: 60px;
-    width: 120px;
-    display: flex;            
-    justify-content: center;  
-    align-items: center;      
+  height: 60px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav ul {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;               
-    list-style: none;         
-    padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 
 
-.nav li:hover{
-    background-color: #04aa6d;
+.nav li:hover {
+  background-color: #04aa6d;
 }
 
 /* Search bar section */
@@ -73,11 +87,11 @@ body {
 }
 
 .search-container input {
-  padding: 10px 40px 10px 15px; 
+  padding: 10px 40px 10px 15px;
   border-radius: 25px;
   border: 1px solid #ccc;
   font-size: 16px;
-  font-style: italic;  
+  font-style: italic;
 }
 
 .search-container input::placeholder {
@@ -96,102 +110,121 @@ body {
 }
 
 .search-container button img {
-  width: 16px;   
+  width: 16px;
   height: 16px;
 }
 
 input::placeholder {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* theme section */
 
-.change{
-  height: 30px;
-  width:  30px;
-  margin: 0px 0px 0px 10px;
+
+.topbar {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 5px;
 }
 
-.change img{
-  height: 25px;
-  width:  25px;
+.toggle-btn {
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Dark mode styles */
+.darkmode {
+  background-color: #1d2a35;
+  color: white;
 }
 
 
 /* about section */
 
-.about{
+.about {
   margin-left: 20px;
 }
 
 .about ul li {
-    height: 40.1px;
-    width: 160px;
-    display: flex;            
-    justify-content: center;  
-    align-items: center;      
+  height: 40.1px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about ul {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;               
-    list-style: none;         
-    padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .about a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+
 }
 
 
-.about li:hover{
-    background-color:#38444d;
-    border-radius: 20px;
+.about li:hover {
+  background-color: #38444d;
+  border-radius: 20px;
 }
 
 
 /* signin bar section */
 
-.sign{
+.sign {
   height: 30px;
-  width:  100px;
+  width: 100px;
   margin-left: 12px;
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
-.sign button{
-  height: 55px;
-  width:  120px;
+.sign button {
+  height: 40px;
+  width: 100px;
   border-radius: 10px;
   border: none;
-  font-size: 19px;
+  font-size: 15px;
   background: #04aa6d;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/*language section*/
 
-.lang{
-  background-color: #141d24;
-  height: 30px;
-}
-
-.lang ul{
+.scroll-container {
   display: flex;
-  list-style: none;
+  overflow-x: auto;
+  background-color: #141d24;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.lang ul li{
-  margin: 0px 0px 0px 10px;
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
-.lang a{
-  text-decoration: none;
+.box {
+  flex: 0 0 auto;
   color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 13px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.box:hover {
+  background-color: black;
 }

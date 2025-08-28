@@ -24,7 +24,7 @@ body {
 
 .menu {
   height: 60px;
-  width: 1730px;
+  width: 1481px;
   background-color: #1d2a35;
   display: flex;
   align-items: center;
@@ -36,16 +36,21 @@ body {
 /* logo section */
 
 .logo {
-  height: 30px;
-  width: 110px;
+  height:60px;
+  width: 70px;
   text-align: center;
-  padding: 0px 0px 0px 10px;
 }
 
+.logo h3{
+  margin-top: 6px;
+  
+}
 
 .logo h3 a {
   text-decoration: none;
   color: #04aa6d;
+  font-size: 18px;
+  text-align: center;
 }
 
 
@@ -53,15 +58,14 @@ body {
 
 .nav ul li {
   height: 60px;
-  width: 120px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nav ul {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
   display: flex;
   list-style: none;
   padding: 0;
@@ -70,7 +74,7 @@ body {
 .nav a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
@@ -87,11 +91,13 @@ body {
 }
 
 .search-container input {
-  padding: 10px 40px 10px 15px;
+  padding: 10px 40px 10px 20px;
   border-radius: 25px;
   border: 1px solid #ccc;
   font-size: 16px;
   font-style: italic;
+  width: 170px;
+  height: 35px;
 }
 
 .search-container input::placeholder {
@@ -148,20 +154,20 @@ input::placeholder {
 /* about section */
 
 .about {
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 .about ul li {
-  height: 40.1px;
-  width: 160px;
+  height: 40px;
+  width: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .about ul {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 65px;
   display: flex;
   list-style: none;
   padding: 0;
@@ -169,8 +175,8 @@ input::placeholder {
 
 .about a {
   text-decoration: none;
-  color: white;
-  font-size: 18px;
+  color: rgb(203, 203, 203);
+  font-size: 15px;
 
 }
 
@@ -196,10 +202,14 @@ input::placeholder {
   border-radius: 10px;
   border: none;
   font-size: 15px;
-  background: #04aa6d;
+  background-color: #04aa6d  ;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.sign button:hover{
+  background-color:  rgb(199, 199, 199, 0.1);
 }
 
 
@@ -222,9 +232,74 @@ input::placeholder {
   padding: 14px 20px;
   font-size: 13px;
   transition: 0.3s;
-  font-weight: bold;
+  
 }
 
 .box:hover {
-  background-color: black;
+  background-color: #04aa6d;
 }
+
+/*html-info*/
+
+.html-container{
+  overflow-y: auto;
+  background-color: #1d2a35;
+  width: 245px;
+  height: 640px;
+  scrollbar-width: thin;              /* Firefox slim scrollbar */
+  scrollbar-color: #828383 #1d2a35;   /* thumb + track color */
+  padding-right: 8px;                 /* scroll bar ko andar lane ke liye */
+  box-sizing: content-box;  
+}
+
+.html-container::-webkit-scrollbar {
+  width: 8px;   /* slim scrollbar */
+}
+
+.html-container::-webkit-scrollbar-track {
+  background: #1d2a35;   /* background same color */
+}
+
+.html-container::-webkit-scrollbar-thumb {
+  background-color: #1d2a35; 
+  border-radius: 0px;
+}
+
+.html-container::after {
+  content: "";
+  display: block;
+  height: 30px;        /* jitna space chahiye utna set karo */
+  background-color: #1d2a35;
+}
+
+.head{
+  color: white;
+  margin: 15px 0px 8px 15px;
+  font-size: 20px;
+}       
+
+.headone{
+  color: white;
+  margin: 25px 0px 8px 15px;
+  font-size: 20px;
+}
+
+.boxone {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+  padding: 5px 0px 5px 15px;
+  
+}
+
+.html-container a{
+  text-decoration: none;
+}
+
+
+.boxone:hover{
+  background-color: #04aa6d;
+  color: white;
+}
+
